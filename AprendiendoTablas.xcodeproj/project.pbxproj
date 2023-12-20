@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0B0D73F52B31BDD700B5354C /* TweetTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B0D73F42B31BDD700B5354C /* TweetTableViewCell.swift */; };
+		0B0D73F72B31BDDB00B5354C /* TweetTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0B0D73F62B31BDDB00B5354C /* TweetTableViewCell.xib */; };
 		0BD0D6C72B30894200768B46 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BD0D6C62B30894200768B46 /* AppDelegate.swift */; };
 		0BD0D6C92B30894200768B46 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BD0D6C82B30894200768B46 /* SceneDelegate.swift */; };
 		0BD0D6CB2B30894200768B46 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BD0D6CA2B30894200768B46 /* ViewController.swift */; };
@@ -16,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0B0D73F42B31BDD700B5354C /* TweetTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TweetTableViewCell.swift; path = AprendiendoTablas/Cells/TweetTableViewCell.swift; sourceTree = SOURCE_ROOT; };
+		0B0D73F62B31BDDB00B5354C /* TweetTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = TweetTableViewCell.xib; path = AprendiendoTablas/Cells/TweetTableViewCell.xib; sourceTree = SOURCE_ROOT; };
 		0BD0D6C32B30894200768B46 /* AprendiendoTablas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AprendiendoTablas.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0BD0D6C62B30894200768B46 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0BD0D6C82B30894200768B46 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -37,6 +41,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0B0D73F32B31BDBD00B5354C /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				0B0D73F62B31BDDB00B5354C /* TweetTableViewCell.xib */,
+				0B0D73F42B31BDD700B5354C /* TweetTableViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 		0BD0D6BA2B30894100768B46 = {
 			isa = PBXGroup;
 			children = (
@@ -56,6 +69,7 @@
 		0BD0D6C52B30894200768B46 /* AprendiendoTablas */ = {
 			isa = PBXGroup;
 			children = (
+				0B0D73F32B31BDBD00B5354C /* Cell */,
 				0BD0D6C62B30894200768B46 /* AppDelegate.swift */,
 				0BD0D6C82B30894200768B46 /* SceneDelegate.swift */,
 				0BD0D6CA2B30894200768B46 /* ViewController.swift */,
@@ -128,6 +142,7 @@
 				0BD0D6D32B30894200768B46 /* LaunchScreen.storyboard in Resources */,
 				0BD0D6D02B30894200768B46 /* Assets.xcassets in Resources */,
 				0BD0D6CE2B30894200768B46 /* Main.storyboard in Resources */,
+				0B0D73F72B31BDDB00B5354C /* TweetTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,6 +156,7 @@
 				0BD0D6CB2B30894200768B46 /* ViewController.swift in Sources */,
 				0BD0D6C72B30894200768B46 /* AppDelegate.swift in Sources */,
 				0BD0D6C92B30894200768B46 /* SceneDelegate.swift in Sources */,
+				0B0D73F52B31BDD700B5354C /* TweetTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

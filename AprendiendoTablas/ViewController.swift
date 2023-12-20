@@ -11,6 +11,8 @@ class ViewController: UIViewController {
     
     private let arryName = [1,2,3,4,5]
     
+    private var dataSource = ["@carlosmejis3185", "@mariohard", "@pedrobustamante", "@cecilio12", "@platzi"]
+    
     @IBOutlet weak var tableView: UITableView!
     
     /*
@@ -22,6 +24,7 @@ class ViewController: UIViewController {
         
         //No Olvidar :)
         tableView.dataSource = self
+        tableView.register(UINib(nibName: "TweetTableViewCell", bundle: nil), forCellReuseIdentifier: "TweetTableViewCell")
         
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: "mi-celda")
         
@@ -44,13 +47,16 @@ extension ViewController : UITableViewDataSource {
     
     //1. Numbero de fila que tendra nuestra tabla
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return self.arryName.count
+        return dataSource.count
     }
     
     //2. Metodo para saber que celda debe mostrarse
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "mi-celda", for: indexPath)
-        cell.textLabel?.text = "Soy la celda numero #\(indexPath.row)"
+        let cell = tableView.dequeueReusableCell(withIdentifier: "TweetTableViewCell", for: indexPath)
+        
+        if let newCell = cell as? TweetTableViewCell {
+            newCell.setupCell(username: dataSource[indexPath.row], message: "Soy un tweet")
+        }
         
         return cell
     }
